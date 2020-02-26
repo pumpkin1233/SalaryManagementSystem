@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>employee</class>
+ <widget class="QMainWindow" name="employee">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>961</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;记 录&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>仿宋</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;功能&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tabWidgetPage1">
+            <attribute name="title">
+             <string notr="true">添加记录</string>
+            </attribute>
+            <widget class="QWidget" name="gridLayoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>761</width>
+               <height>161</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string> 所属部门:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string> 基本工资:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string> 扣款金额:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string> 补贴项目:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string> 奖励工资:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <widget class="QLineEdit" name="add_baseSalary"/>
+              </item>
+              <item row="2" column="3">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string> 扣款项目:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="4">
+               <widget class="QLineEdit" name="add_fineMoney"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string> 姓  名:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string> 补贴金额:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLineEdit" name="add_subsidy"/>
+              </item>
+              <item row="2" column="4">
+               <widget class="QLineEdit" name="add_fine"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="add_sex"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="add_name"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="add_id"/>
+              </item>
+              <item row="1" column="6">
+               <widget class="QLineEdit" name="add_reward"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="add_department"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string> 性  别:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string> 职工号:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QLineEdit" name="add_subsidyMoney"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QPushButton" name="pushButton_add">
+             <property name="geometry">
+              <rect>
+               <x>810</x>
+               <y>30</y>
+               <width>93</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>添加</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage2">
+            <attribute name="title">
+             <string>删除记录</string>
+            </attribute>
+            <widget class="QWidget" name="horizontalLayoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>40</y>
+               <width>431</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string> 请输入职工号：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="delete_Id"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_delete">
+                <property name="text">
+                 <string> 删除</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage3">
+            <attribute name="title">
+             <string>修改记录</string>
+            </attribute>
+            <widget class="QPushButton" name="pushButton_modify">
+             <property name="geometry">
+              <rect>
+               <x>430</x>
+               <y>70</y>
+               <width>93</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string> 修改</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage4">
+            <attribute name="title">
+             <string>显示记录</string>
+            </attribute>
+            <widget class="QPushButton" name="pushButton_showAll">
+             <property name="geometry">
+              <rect>
+               <x>550</x>
+               <y>70</y>
+               <width>211</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string> 显示记录完整职工的所有信息</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_showRecords">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>70</y>
+               <width>101</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string> 显示所有职工</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage5">
+            <attribute name="title">
+             <string>排序</string>
+            </attribute>
+            <widget class="QWidget" name="gridLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>371</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_33">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;按职工号排序:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="sortByIdAscButton">
+                <property name="font">
+                 <font>
+                  <family>仿宋</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>升序</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="sortByIdDscButton">
+                <property name="font">
+                 <font>
+                  <family>仿宋</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>降序</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;按姓名字母排序:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="sortByNameAscButton">
+                <property name="font">
+                 <font>
+                  <family>仿宋</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>升序</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="sortByNameDscButton">
+                <property name="font">
+                 <font>
+                  <family>仿宋</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>降序</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage6">
+            <attribute name="title">
+             <string>查询</string>
+            </attribute>
+            <widget class="QWidget" name="gridLayoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>40</y>
+               <width>361</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>职工姓名：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="search_salary1"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="searchByNameButton">
+                <property name="text">
+                 <string>按人名查询</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_31">
+                <property name="text">
+                 <string>工资上限：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="search_salary2"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="search_name"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string>工资下限：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="searchBySalaryButton">
+                <property name="text">
+                 <string>按工资查询</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabWidgetPage7">
+            <attribute name="title">
+             <string>统计</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>20</y>
+               <width>271</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0,0">
+              <property name="spacing">
+               <number>7</number>
+              </property>
+              <property name="sizeConstraint">
+               <enum>QLayout::SetDefaultConstraint</enum>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_statistic_salary">
+                <property name="text">
+                 <string>此区间工资人数有</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_26">
+                  <property name="text">
+                   <string>工资下限:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="statistic_salary1"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="label_27">
+                  <property name="text">
+                   <string>工资上限:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="statistic_salary2"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QPushButton" name="statisticBySalaryButton">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>150</y>
+               <width>93</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>按工资统计</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="statisticByDepartmentButton">
+             <property name="geometry">
+              <rect>
+               <x>620</x>
+               <y>150</y>
+               <width>93</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>按部门统计</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>490</x>
+               <y>40</y>
+               <width>271</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_statistic_department">
+                <property name="text">
+                 <string> 此部门工资总和为</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <item>
+                 <widget class="Line" name="line_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_29">
+                  <property name="text">
+                   <string>部门名称:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="statistic_department"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionimport"/>
+    <addaction name="separator"/>
+    <addaction name="actionexport"/>
+    <addaction name="separator"/>
+    <addaction name="actionprint"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionhelp"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="separator"/>
+    <addaction name="actionopen"/>
+    <addaction name="separator"/>
+    <addaction name="actionsave"/>
+    <addaction name="separator"/>
+    <addaction name="actionsaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionquit"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionimport">
+   <property name="text">
+    <string>import</string>
+   </property>
+  </action>
+  <action name="actionexport">
+   <property name="text">
+    <string>export</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="text">
+    <string>print</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionsaveAs">
+   <property name="text">
+    <string>saveAs</string>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="text">
+    <string>quit</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
