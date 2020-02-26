@@ -1,0 +1,1 @@
+SELECT * FROM salary.employee_table;
